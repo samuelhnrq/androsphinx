@@ -1,0 +1,35 @@
+mat-sidenav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.whole-screen {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+omt-header {
+  position: fixed;
+}
+
+mat-sidenav {
+  min-width: 20vw;
+  max-width: 25vw;
+}
+
+mat-sidenav-content {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+router-outlet {
+  display: none;
+}

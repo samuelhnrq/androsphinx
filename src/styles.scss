@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$omt-primary: mat-palette($mat-amber, 500, A200, 900);
+$omt-accent:  mat-palette($mat-red, 700, 600, 900);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$omt-app-theme: mat-light-theme($omt-primary, $omt-accent);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($omt-app-theme);

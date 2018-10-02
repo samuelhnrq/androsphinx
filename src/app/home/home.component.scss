@@ -1,0 +1,76 @@
+:host {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.visible-landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+
+#cabecalho-nome {
+  color: #fff;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url("https://img.purch.com/w/640/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzAzMC85NzIvaTAyL3NodXR0ZXJzdG9ja185MzQwNDI4Ny5qcGc/MTM0NzQ4MzcxOQ==");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+nav[mat-tab-nav-bar] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+a.mat-tab-link {
+  margin: 0 40px;
+  font-size: 1.5rem;
+  font-family: 'Questrial', sans-serif;
+}
+
+.content {
+  padding: 0 25% 30px;
+  background-color: whitesmoke;
+  > #about { // Pointless to make sibling selector, only organization
+    font-size: 4em;
+    font-weight: lighter;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 1.7em;
+    line-height: 1.5;
+  }
+
+  a.mat-tab-link {
+    margin: 0;
+  }
+
+  .content {
+    padding: 0 6% 30px;
+  }
+
+  #cabecalho-nome {
+    font-size: 8rem;
+    margin-bottom: 1rem;
+  }
+
+  .mat-display-2 {
+    font-size: 1.8rem;
+  }
+}

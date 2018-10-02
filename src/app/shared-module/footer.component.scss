@@ -1,0 +1,26 @@
+:host {
+  width: 100%;
+}
+
+mat-icon {
+  font-size: 13px;
+}
+
+#footer {
+  background-color: black;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: right;
+  color: #e2e2e2;
+}
+
+.wip {
+  color: #686868;
+}
+
+.name-cursive {
+  font-family: 'Cedarville cursive', cursive, sans-serif;
+  font-size: 18px;
+}
