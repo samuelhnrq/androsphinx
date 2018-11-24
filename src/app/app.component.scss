@@ -17,19 +17,6 @@ omt-header {
   position: fixed;
 }
 
-mat-sidenav {
-  min-width: 20vw;
-  max-width: 25vw;
-}
-
-mat-sidenav-content {
-  flex: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
-  align-items: center;
-  justify-content: space-between;
-}
-
 router-outlet {
   display: none;
 }

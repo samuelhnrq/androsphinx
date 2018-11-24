@@ -23,11 +23,13 @@
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: url("https://img.purch.com/w/640/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzAzMC85NzIvaTAyL3NodXR0ZXJzdG9ja185MzQwNDI4Ny5qcGc/MTM0NzQ4MzcxOQ==");
+  background-image: url("../../assets/name_backdrop.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  letter-spacing: -5px;
+  font-weight: 500;
 }
 
 nav[mat-tab-nav-bar] {
