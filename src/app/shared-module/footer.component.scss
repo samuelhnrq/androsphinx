@@ -28,3 +28,9 @@ mat-icon {
   font-family: 'Cedarville cursive', cursive, sans-serif;
   font-size: 18px;
 }
+
+@media screen and (max-width: 768px) {
+  #footer {
+    font-size: .7em;
+  }
+}

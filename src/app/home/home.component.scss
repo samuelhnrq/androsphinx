@@ -12,10 +12,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("../../assets/snake.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45vw;
   flex: 1;
   z-index: 1;
   width: 100%;
-  height: 100vh;
+  height: 99vh;
+  position: relative;
 }
 
 #cabecalho-nome {
@@ -28,7 +33,6 @@
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  letter-spacing: -5px;
   font-weight: 500;
 }
 
@@ -44,18 +48,33 @@ a.mat-tab-link {
   font-family: 'Questrial', sans-serif;
 }
 
+#work {
+  text-align: right;
+}
+
+.about-container {
+  padding: 0 25%;
+}
+
 .content {
-  padding: 0 25% 30px;
   background-color: whitesmoke;
-  > #about { // Pointless to make sibling selector, only organization
+  padding-bottom: 30px;
+  h1 {
     font-size: 4em;
     font-weight: lighter;
+    padding: .3em 0;
+    margin: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .subtitle-line {
+    text-align: center;
+    font-size: 6vw;
+  }
+
   p {
-    font-size: 1.7em;
+    font-size: 1.3em;
     line-height: 1.5;
   }
 
@@ -63,16 +82,12 @@ a.mat-tab-link {
     margin: 0;
   }
 
-  .content {
+  .about-container {
     padding: 0 6% 30px;
   }
 
   #cabecalho-nome {
-    font-size: 8rem;
+    font-size: 22vw;
     margin-bottom: 1rem;
-  }
-
-  .mat-display-2 {
-    font-size: 1.8rem;
   }
 }
