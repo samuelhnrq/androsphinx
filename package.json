@@ -4,6 +4,7 @@
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "ng": "ng",
+    "now-build": "ng build --prod",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
