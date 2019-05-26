@@ -15,7 +15,7 @@
   background-image: url("../../assets/snake.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 45vw;
+  background-size: 60vw;
   flex: 1;
   z-index: 1;
   width: 100%;
@@ -45,7 +45,7 @@ nav[mat-tab-nav-bar] {
 a.mat-tab-link {
   margin: 0 40px;
   font-size: 1.5rem;
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 
 #work {
@@ -53,7 +53,7 @@ a.mat-tab-link {
 }
 
 .about-container {
-  padding: 0 25%;
+  padding: 0 20%;
 }
 
 .content {
@@ -62,7 +62,7 @@ a.mat-tab-link {
   h1 {
     font-size: 4em;
     font-weight: lighter;
-    padding: .3em 0;
+    padding: 0.3em 0;
     margin: 0;
   }
 }
