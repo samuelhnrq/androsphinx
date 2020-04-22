@@ -2,18 +2,19 @@ import { NgModule } from '@angular/core';
 
 import { HomeComponent } from './home.component';
 import { HomeRouter } from './home.routing';
-import { DefaultMaterialModule } from '../material.module';
-import { CommonModule } from '@angular/common';
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { BrowserModule } from '@angular/platform-browser';
 import { WorkCarrouselComponent } from './work-carrousel/work-carrousel.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+
 
 @NgModule({
   imports: [
-    CommonModule,
+    BrowserModule,
+    MatGridListModule,
+    MatCardModule,
     HomeRouter,
-    DefaultMaterialModule,
-    ScrollToModule,
     ScrollingModule,
   ],
   exports: [],

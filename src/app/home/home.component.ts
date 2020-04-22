@@ -26,19 +26,11 @@ export class HomeComponent implements OnInit {
       .filter((x): x is HTMLElement => x != null)
       .find(wrk => {
         const b = wrk.getBoundingClientRect();
-        if (b instanceof DOMRect) {
-          return (
-            b.y > 0 &&
-            b.x > 0 &&
-            b.x < window.innerWidth &&
-            b.y < window.innerHeight
-          );
-        }
         return (
-          (b.top >= 0 || b.top + b.height >= 0) &&
-          b.left >= 0 &&
-          b.right <= window.innerWidth &&
-          b.bottom - b.height <= window.innerHeight
+          b.y > 0 &&
+          b.x > 0 &&
+          b.x < window.innerWidth &&
+          b.y < window.innerHeight
         );
       });
     this.zone.run(() => {

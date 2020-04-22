@@ -5,10 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared-module/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DefaultMaterialModule } from './material.module';
 import { GhostService } from './services/ghost.service';
 import { HttpClientModule } from '@angular/common/http';
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -17,10 +16,9 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatSidenavModule,
     SharedModule,
     BrowserAnimationsModule,
-    DefaultMaterialModule,
-    ScrollToModule.forRoot(),
     HttpClientModule
   ],
   providers: [GhostService],

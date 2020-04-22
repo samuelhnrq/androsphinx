@@ -2,22 +2,22 @@
   <div class="visible-landing mat-elevation-z4">
     <h1 id="cabecalho-nome" class="mat-display-4">Samuel H.</h1>
     <div class="mat-display-2 subtitle-line">Hello, I'm a software developer.</div>
-  
+
     <nav mat-tab-nav-bar mat-stretch-tabs>
-      <a mat-tab-link *ngFor="let link of navLinks" [ngx-scroll-to]="link.path" [active]="selectedTab === link.path"
-        (click)="selectedTab = link.path">
+      <a mat-tab-link *ngFor="let link of navLinks" (click)="selectedTab = link.path">
         {{link.label}}
       </a>
     </nav>
   </div>
-  
+
   <div class="content">
     <div class="about-container">
       <h1 class="about" id="about">about me</h1>
       <p>
         I'm a very passionate software developer, who is looking to expand my career and horizons. I'm currently
         employed at IBM Brazil designated as a lead web developer to a client in the insurance business, part of the
-        proudly part of the garage/innovation teams, we bring disruption, technology, and innovation to the rest of the company.
+        proudly part of the garage/innovation teams, we bring disruption, technology, and innovation to the rest of the
+        company.
       </p>
       <h1 class="work" id="work">my work</h1>
     </div>
