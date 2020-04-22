@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
         );
       });
     this.zone.run(() => {
-      if (current != null) {
+      if (current != null && ev.measureScrollOffset('top') > 10) {
         this.selectedTab = `#${current.id}`;
       } else {
         this.selectedTab = '';
