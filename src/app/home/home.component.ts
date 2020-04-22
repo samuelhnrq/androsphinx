@@ -31,6 +31,7 @@ export class HomeComponent implements OnInit {
   updateSelectedTab(ev: CdkScrollable) {
     const current = this.navLinks.map(x => document.querySelector(x.path))
       .filter((x): x is HTMLElement => x != null)
+      .reverse()
       .find(wrk => {
         const b = wrk.getBoundingClientRect();
         return (
