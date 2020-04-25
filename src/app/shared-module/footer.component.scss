@@ -10,24 +10,26 @@ mat-icon {
   height: 20px;
 }
 
+$padding: 20px;
+
 #footer {
   background-color: black;
-  padding: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: right;
   color: #e2e2e2;
+  padding: $padding 0;
   @media screen and (max-width: 768px) {
-    font-size: 0.7em;
+    flex-wrap: wrap;
   }
 }
 
 .wip {
-  color: #686868;
+  color: #838383;
 }
 
 .name-cursive {
-  font-family: 'Cedarville cursive', cursive, sans-serif;
+  font-family: "Cedarville cursive", cursive, sans-serif;
   font-size: 18px;
 }

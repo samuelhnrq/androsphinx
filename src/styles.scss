@@ -1,28 +1,28 @@
-@import '~@angular/material/theming';
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat&family=Questrial&' + 'family=Material+Icons&display=swap');
+@import "~@angular/material/theming";
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat&family=Questrial&family=Material+Icons&display=swap");
 
 $custom-typography: mat-typography-config(
-  $font-family: 'Questrial, sans-serif',
+  $font-family: "Questrial, sans-serif",
   $body-2:
     mat-typography-level(
       14px,
       24px,
       500,
-      $font-family: 'Montserrat, sans-serif'
+      $font-family: "Montserrat, sans-serif"
     ),
   $body-1:
     mat-typography-level(
       14px,
       20px,
       400,
-      $font-family: 'Montserrat, sans-serif'
+      $font-family: "Montserrat, sans-serif"
     ),
   $title:
     mat-typography-level(
       20px,
       32px,
       500,
-      $font-family: 'Montserrat, sans-serif'
+      $font-family: "Montserrat, sans-serif"
     ),
 );
 

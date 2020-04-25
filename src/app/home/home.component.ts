@@ -51,12 +51,14 @@ export class HomeComponent implements OnInit {
           b.y < window.innerHeight
         );
       });
+    let selectedTab = '';
+    if (current != null && ev.measureScrollOffset('top') > 10) {
+      selectedTab = `#${current.id}`;
+    } else {
+      selectedTab = '';
+    }
     this.zone.run(() => {
-      if (current != null && ev.measureScrollOffset('top') > 10) {
-        this.selectedTab = `#${current.id}`;
-      } else {
-        this.selectedTab = '';
-      }
+      this.selectedTab = selectedTab;
     });
   }
 

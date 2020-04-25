@@ -1,15 +1,15 @@
 :host {
   display: block;
-  margin: 0 5vw;
+  padding: 5px;
+  overflow: visible;
 }
 
-.sulamerica-logo {
-  background-image: url('https://portal.sulamericaseguros.com.br/responsivo/tacomtudo/img/logo-sulamerica.png');
+img[mat-card-image] {
+  width: 300px;
 }
 
-.img-wrapper {
+.logo-consultoria {
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
-  background-size: 90%;
-  height: 200px;
 }
