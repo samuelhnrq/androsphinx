@@ -1,3 +1,6 @@
+// @import "~@angular/material/theming";
+@import "../../theme.scss";
+
 :host {
   flex: 1;
   width: 100%;
@@ -40,7 +43,7 @@
     -webkit-text-fill-color: unset;
     -webkit-text-stroke-width: 0;
     background: none;
-    color: rgb(226, 201, 60);
+    color: mat-color($omt-primary);
   }
 }
 
@@ -72,7 +75,7 @@ a.mat-tab-link {
 
   h1 {
     font-weight: lighter;
-    padding: 0.3em 0;
+    padding: 0 0.5em 0.3em;
     margin: 0;
   }
 }

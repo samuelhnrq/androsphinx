@@ -1,0 +1,31 @@
+@import "~@angular/material/theming";
+
+$custom-typography: mat-typography-config(
+  $font-family: "Questrial, sans-serif",
+  $body-2:
+    mat-typography-level(
+      14px,
+      24px,
+      500,
+      $font-family: "Montserrat, sans-serif"
+    ),
+  $body-1:
+    mat-typography-level(
+      14px,
+      20px,
+      400,
+      $font-family: "Montserrat, sans-serif"
+    ),
+  $title:
+    mat-typography-level(
+      20px,
+      32px,
+      500,
+      $font-family: "Montserrat, sans-serif"
+    ),
+);
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$omt-primary: mat-palette($mat-purple); // , 500, A200, 900);
+$omt-accent: mat-palette($mat-indigo); // , 700, 600, 900);

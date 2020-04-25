@@ -1,32 +1,9 @@
-@import "~@angular/material/theming";
+// @import "~@angular/material/theming";
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat&family=Questrial&family=Material+Icons&display=swap");
+@import "./theme.scss";
 
-$custom-typography: mat-typography-config(
-  $font-family: "Questrial, sans-serif",
-  $body-2:
-    mat-typography-level(
-      14px,
-      24px,
-      500,
-      $font-family: "Montserrat, sans-serif"
-    ),
-  $body-1:
-    mat-typography-level(
-      14px,
-      20px,
-      400,
-      $font-family: "Montserrat, sans-serif"
-    ),
-  $title:
-    mat-typography-level(
-      20px,
-      32px,
-      500,
-      $font-family: "Montserrat, sans-serif"
-    ),
-);
-
-@include mat-core($custom-typography);
+// Create the theme object (a Sass map containing all of the palettes).
+$omt-app-theme: mat-light-theme($omt-primary, $omt-accent);
 
 @media screen and (max-width: 768px) {
   html {
@@ -34,15 +11,7 @@ $custom-typography: mat-typography-config(
   }
 }
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
-$omt-primary: mat-palette($mat-amber, 500, A200, 900);
-$omt-accent: mat-palette($mat-red, 700, 600, 900);
-
-// Create the theme object (a Sass map containing all of the palettes).
-$omt-app-theme: mat-light-theme($omt-primary, $omt-accent);
-
+@include mat-core($custom-typography);
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
