@@ -7,20 +7,20 @@ const routes: Routes = [
     pathMatch: 'full',
     redirectTo: '/home',
     data: {
-      hideToolbar: true
-    }
+      hideToolbar: true,
+    },
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
     data: {
-      hideToolbar: true
-    }
-  }
+      hideToolbar: true,
+    },
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

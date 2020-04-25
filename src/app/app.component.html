@@ -2,7 +2,10 @@
   <mat-sidenav [mode]="'over'" #lateral>Start</mat-sidenav>
   <mat-sidenav-content>
     <div class="whole-screen">
-      <omt-header (openMenu)="lateral.toggle()" [hidden]="!visibleToolbar"></omt-header>
+      <omt-header
+        (openMenu)="lateral.toggle()"
+        [hidden]="!visibleToolbar"
+      ></omt-header>
       <router-outlet></router-outlet>
     </div>
     <omt-footer></omt-footer>

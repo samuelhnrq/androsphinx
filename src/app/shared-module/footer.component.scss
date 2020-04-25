@@ -18,6 +18,9 @@ mat-icon {
   align-items: center;
   text-align: right;
   color: #e2e2e2;
+  @media screen and (max-width: 768px) {
+    font-size: 0.7em;
+  }
 }
 
 .wip {
@@ -27,10 +30,4 @@ mat-icon {
 .name-cursive {
   font-family: 'Cedarville cursive', cursive, sans-serif;
   font-size: 18px;
-}
-
-@media screen and (max-width: 768px) {
-  #footer {
-    font-size: .7em;
-  }
 }

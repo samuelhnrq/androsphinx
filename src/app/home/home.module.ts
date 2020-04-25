@@ -9,7 +9,6 @@ import { MatCardModule } from '@angular/material/card';
 import { CommonModule } from '@angular/common';
 import { MatTabsModule } from '@angular/material/tabs';
 
-
 @NgModule({
   imports: [
     CommonModule,
@@ -23,4 +22,4 @@ import { MatTabsModule } from '@angular/material/tabs';
   declarations: [HomeComponent, WorkCarrouselComponent],
   providers: [],
 })
-export class HomeModule { }
+export class HomeModule {}

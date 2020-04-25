@@ -1,5 +1,11 @@
 import { CdkScrollable, ScrollDispatcher } from '@angular/cdk/overlay';
-import { Component, NgZone, OnInit, ViewChild, ElementRef } from '@angular/core';
+import {
+  Component,
+  NgZone,
+  OnInit,
+  ViewChild,
+  ElementRef,
+} from '@angular/core';
 import { filter } from 'rxjs/operators';
 
 interface ILink {
@@ -11,7 +17,7 @@ interface ILink {
 @Component({
   selector: 'omt-home',
   templateUrl: 'home.component.html',
-  styleUrls: ['home.component.scss']
+  styleUrls: ['home.component.scss'],
 })
 export class HomeComponent implements OnInit {
   selectedTab = '';
@@ -23,16 +29,20 @@ export class HomeComponent implements OnInit {
   navLinks: ILink[] = [];
 
   constructor(scroll: ScrollDispatcher, private zone: NgZone) {
-    scroll.scrolled(50).pipe(
-      filter((x): x is CdkScrollable => !!x && x instanceof CdkScrollable)
-    ).subscribe(this.updateSelectedTab.bind(this));
+    scroll
+      .scrolled(50)
+      .pipe(
+        filter((x): x is CdkScrollable => !!x && x instanceof CdkScrollable)
+      )
+      .subscribe(this.updateSelectedTab.bind(this));
   }
 
   updateSelectedTab(ev: CdkScrollable) {
-    const current = this.navLinks.map(x => document.querySelector(x.path))
+    const current = this.navLinks
+      .map((x) => document.querySelector(x.path))
       .filter((x): x is HTMLElement => x != null)
       .reverse()
-      .find(wrk => {
+      .find((wrk) => {
         const b = wrk.getBoundingClientRect();
         return (
           b.y > 0 &&
@@ -59,6 +69,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.navLinks.push(
       { path: '#about', label: 'About me', ref: this.about },
-      { path: '#work', label: 'Work', ref: this.work });
+      { path: '#work', label: 'Work', ref: this.work }
+    );
   }
 }

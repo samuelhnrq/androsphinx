@@ -11,7 +11,7 @@ export interface IMetaListPosts {
   previous_page: string;
 }
 
-export interface IPost  {
+export interface IPost {
   id: string;
   uuid: string;
   title: string;

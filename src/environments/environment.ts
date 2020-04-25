@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  BUTTERCMS_KEY: '5e4bdc3449e2d3cf34655fa838052c506f55a2a5'
+  BUTTERCMS_KEY: '5e4bdc3449e2d3cf34655fa838052c506f55a2a5',
 };
 
 /*

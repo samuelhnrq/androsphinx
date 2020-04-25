@@ -10,18 +10,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatSidenavModule,
     SharedModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [GhostService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
